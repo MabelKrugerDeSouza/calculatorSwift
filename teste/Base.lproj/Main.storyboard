@@ -48,6 +48,9 @@
                                                     <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="25"/>
                                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="btnMaisEMenosClic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e6N-1A-weC"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tVd-2M-fPM">
                                                 <rect key="frame" x="159" y="0.0" width="71.666666666666686" height="71.333333333333329"/>
@@ -59,6 +62,9 @@
                                                     <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="25"/>
                                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="btnPorcenClic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J0r-iq-7sP"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Zs-qa-vc2">
                                                 <rect key="frame" x="238.66666666666671" y="0.0" width="71.333333333333343" height="71.333333333333329"/>
@@ -70,6 +76,9 @@
                                                     <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="btnDivisaoClic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eO6-kT-YmW"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -131,6 +140,9 @@
                                                     <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="25"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="btnMultiClic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LzU-gt-0tc"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -192,6 +204,9 @@
                                                     <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="btnSubClic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oed-aq-x6f"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -253,6 +268,9 @@
                                                     <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="25"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="btnSomaClic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LmT-go-tq9"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -300,6 +318,9 @@
                                                     <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="btnIgualClic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xrz-yA-EpC"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
