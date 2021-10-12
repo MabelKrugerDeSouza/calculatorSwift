@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,17 +12,17 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="teste" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Q7j-Mv-AeV">
-                                <rect key="frame" x="40" y="415" width="348" height="437"/>
+                                <rect key="frame" x="40" y="380.66666666666674" width="310" height="389.33333333333326"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="s03-wi-1wi">
-                                        <rect key="frame" x="0.0" y="0.0" width="348" height="81"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="310" height="71.333333333333329"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Weh-l4-oya">
-                                                <rect key="frame" x="0.0" y="0.0" width="81" height="81"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="71.666666666666671" height="71.333333333333329"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Weh-l4-oya" secondAttribute="height" multiplier="1:1" id="8Zl-q0-N9b"/>
                                                 </constraints>
@@ -34,9 +34,12 @@
                                                     <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="25"/>
                                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="btnAcClique:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jF9-bw-l6q"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vg5-o1-r1Q">
-                                                <rect key="frame" x="89" y="0.0" width="81" height="81"/>
+                                                <rect key="frame" x="79.666666666666686" y="0.0" width="71.333333333333314" height="71.333333333333329"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="+/-" cornerStyle="capsule">
                                                     <backgroundConfiguration key="background">
@@ -47,7 +50,7 @@
                                                 </buttonConfiguration>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tVd-2M-fPM">
-                                                <rect key="frame" x="178" y="0.0" width="81" height="81"/>
+                                                <rect key="frame" x="159" y="0.0" width="71.666666666666686" height="71.333333333333329"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="%" cornerStyle="capsule">
                                                     <backgroundConfiguration key="background">
@@ -58,7 +61,7 @@
                                                 </buttonConfiguration>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Zs-qa-vc2">
-                                                <rect key="frame" x="267" y="0.0" width="81" height="81"/>
+                                                <rect key="frame" x="238.66666666666671" y="0.0" width="71.333333333333343" height="71.333333333333329"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="÷" cornerStyle="capsule">
                                                     <backgroundConfiguration key="background">
@@ -71,10 +74,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4tQ-8T-MDy">
-                                        <rect key="frame" x="0.0" y="89" width="348" height="81"/>
+                                        <rect key="frame" x="0.0" y="79.333333333333314" width="310" height="71.666666666666686"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gV-cZ-BDN">
-                                                <rect key="frame" x="0.0" y="0.0" width="81" height="81"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="71.666666666666671" height="71.666666666666671"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="8gV-cZ-BDN" secondAttribute="height" multiplier="1:1" id="6Bt-fK-6X2"/>
                                                 </constraints>
@@ -86,9 +89,12 @@
                                                     <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="btnSeteClic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RH0-WH-WiV"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3uy-5f-Lmm">
-                                                <rect key="frame" x="89" y="0.0" width="81" height="81"/>
+                                                <rect key="frame" x="79.666666666666686" y="0.0" width="71.333333333333314" height="71.666666666666671"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="8" cornerStyle="capsule">
                                                     <backgroundConfiguration key="background">
@@ -97,9 +103,12 @@
                                                     <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="25"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="btnOitoClic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hQb-bM-njl"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OMR-CT-DWo">
-                                                <rect key="frame" x="178" y="0.0" width="81" height="81"/>
+                                                <rect key="frame" x="159" y="0.0" width="71.666666666666686" height="71.666666666666671"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="9" cornerStyle="capsule">
                                                     <backgroundConfiguration key="background">
@@ -108,9 +117,12 @@
                                                     <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="25"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="btnNoveClic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SAN-Ou-iAe"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tj6-c2-6Mh">
-                                                <rect key="frame" x="267" y="0.0" width="81" height="81"/>
+                                                <rect key="frame" x="238.66666666666671" y="0.0" width="71.333333333333343" height="71.666666666666671"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="x" cornerStyle="capsule">
                                                     <backgroundConfiguration key="background">
@@ -123,10 +135,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="dqH-gd-qEq">
-                                        <rect key="frame" x="0.0" y="178" width="348" height="81"/>
+                                        <rect key="frame" x="0.0" y="158.99999999999994" width="310" height="71.333333333333314"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2GF-22-ui1">
-                                                <rect key="frame" x="0.0" y="0.0" width="81" height="81"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="71.666666666666671" height="71.333333333333329"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="2GF-22-ui1" secondAttribute="height" multiplier="1:1" id="hKv-KF-K9V"/>
                                                 </constraints>
@@ -138,9 +150,12 @@
                                                     <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="25"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="btnQuatroClic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="56r-KB-1eY"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acD-Gg-FFS">
-                                                <rect key="frame" x="89" y="0.0" width="81" height="81"/>
+                                                <rect key="frame" x="79.666666666666686" y="0.0" width="71.333333333333314" height="71.333333333333329"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="5" cornerStyle="capsule">
                                                     <backgroundConfiguration key="background">
@@ -149,9 +164,12 @@
                                                     <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="25"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="btnCincoClic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Iof-7W-sVy"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fpq-Hz-FIa">
-                                                <rect key="frame" x="178" y="0.0" width="81" height="81"/>
+                                                <rect key="frame" x="159" y="0.0" width="71.666666666666686" height="71.333333333333329"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="6" cornerStyle="capsule">
                                                     <backgroundConfiguration key="background">
@@ -160,9 +178,12 @@
                                                     <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="25"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="btnSeisClic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tgW-ki-svF"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v2y-p2-b0k">
-                                                <rect key="frame" x="267" y="0.0" width="81" height="81"/>
+                                                <rect key="frame" x="238.66666666666671" y="0.0" width="71.333333333333343" height="71.333333333333329"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="-" cornerStyle="capsule">
                                                     <backgroundConfiguration key="background">
@@ -175,10 +196,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="VRK-n6-DQ0">
-                                        <rect key="frame" x="0.0" y="267" width="348" height="81"/>
+                                        <rect key="frame" x="0.0" y="238.33333333333329" width="310" height="71.666666666666657"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BMG-XA-29o">
-                                                <rect key="frame" x="0.0" y="0.0" width="81" height="81"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="71.666666666666671" height="71.666666666666671"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="BMG-XA-29o" secondAttribute="height" multiplier="1:1" id="cHV-dQ-h8E"/>
                                                 </constraints>
@@ -190,9 +211,12 @@
                                                     <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="25"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="btnUmClic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Z7-hy-0H6"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QxT-2K-hPe">
-                                                <rect key="frame" x="89" y="0.0" width="81" height="81"/>
+                                                <rect key="frame" x="79.666666666666686" y="0.0" width="71.333333333333314" height="71.666666666666671"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="2" cornerStyle="capsule">
                                                     <backgroundConfiguration key="background">
@@ -201,9 +225,12 @@
                                                     <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="25"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="btnDoisClic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xFW-Q2-i9Q"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gK1-Gf-8Sh">
-                                                <rect key="frame" x="178" y="0.0" width="81" height="81"/>
+                                                <rect key="frame" x="159" y="0.0" width="71.666666666666686" height="71.666666666666671"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="3" cornerStyle="capsule">
                                                     <backgroundConfiguration key="background">
@@ -212,9 +239,12 @@
                                                     <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="25"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="btnTresClic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GC3-3F-nGo"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xYP-OR-zlQ">
-                                                <rect key="frame" x="267" y="0.0" width="81" height="81"/>
+                                                <rect key="frame" x="238.66666666666671" y="0.0" width="71.333333333333343" height="71.666666666666671"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="+" cornerStyle="capsule">
                                                     <backgroundConfiguration key="background">
@@ -227,10 +257,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="TMb-n0-DNH">
-                                        <rect key="frame" x="0.0" y="356" width="348" height="81"/>
+                                        <rect key="frame" x="0.0" y="317.99999999999994" width="310" height="71.333333333333314"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hkD-VP-has">
-                                                <rect key="frame" x="0.0" y="0.0" width="170" height="81"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="151" height="71.333333333333329"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="0" cornerStyle="capsule">
                                                     <backgroundConfiguration key="background">
@@ -239,9 +269,12 @@
                                                     <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="25"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="btnZeroClic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bwj-u4-TWt"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="79r-Ts-FoX">
-                                                <rect key="frame" x="178" y="0.0" width="81" height="81"/>
+                                                <rect key="frame" x="159" y="0.0" width="71.666666666666686" height="71.333333333333329"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="79r-Ts-FoX" secondAttribute="height" multiplier="1:1" id="YI6-D9-LOJ"/>
                                                 </constraints>
@@ -255,7 +288,7 @@
                                                 </buttonConfiguration>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yrq-SV-BjR">
-                                                <rect key="frame" x="267" y="0.0" width="81" height="81"/>
+                                                <rect key="frame" x="238.66666666666671" y="0.0" width="71.333333333333343" height="71.333333333333329"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Yrq-SV-BjR" secondAttribute="height" multiplier="1:1" id="eAu-Q7-lYX"/>
                                                 </constraints>
@@ -273,7 +306,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAT-Ah-Lhg">
-                                <rect key="frame" x="40" y="293" width="348" height="82"/>
+                                <rect key="frame" x="40" y="258.66666666666669" width="310" height="82"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="82" id="G4i-Ox-KBB"/>
                                 </constraints>
@@ -282,11 +315,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="miE-0G-SPc">
-                                <rect key="frame" x="40" y="225" width="348" height="58"/>
+                                <rect key="frame" x="40" y="190.66666666666666" width="310" height="58"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="58" id="MCD-Fa-ncf"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -305,6 +338,29 @@
                             <constraint firstItem="miE-0G-SPc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="xJB-wn-ESc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bntCinco" destination="acD-Gg-FFS" id="H7R-dK-mPj"/>
+                        <outlet property="btnAC" destination="Weh-l4-oya" id="nxk-8v-p5D"/>
+                        <outlet property="btnDivisao" destination="7Zs-qa-vc2" id="uap-Ke-jxu"/>
+                        <outlet property="btnDois" destination="QxT-2K-hPe" id="f3a-fd-mZp"/>
+                        <outlet property="btnIgual" destination="Yrq-SV-BjR" id="MXY-uK-6Cj"/>
+                        <outlet property="btnMaisEMenos" destination="Vg5-o1-r1Q" id="fX0-FQ-MqI"/>
+                        <outlet property="btnMultiplicacao" destination="tj6-c2-6Mh" id="zRo-nD-GjN"/>
+                        <outlet property="btnNove" destination="OMR-CT-DWo" id="7qt-l8-UC9"/>
+                        <outlet property="btnOito" destination="3uy-5f-Lmm" id="DBb-Gy-rbt"/>
+                        <outlet property="btnPorcen" destination="tVd-2M-fPM" id="QU4-Dc-DFb"/>
+                        <outlet property="btnQuatro" destination="2GF-22-ui1" id="t6p-il-4oc"/>
+                        <outlet property="btnSeis" destination="Fpq-Hz-FIa" id="CAv-oe-oeB"/>
+                        <outlet property="btnSete" destination="8gV-cZ-BDN" id="jLa-9W-Q1q"/>
+                        <outlet property="btnSoma" destination="xYP-OR-zlQ" id="LBa-vy-rQf"/>
+                        <outlet property="btnSub" destination="v2y-p2-b0k" id="4od-iz-Qka"/>
+                        <outlet property="btnTres" destination="gK1-Gf-8Sh" id="ddS-cm-H2c"/>
+                        <outlet property="btnUm" destination="BMG-XA-29o" id="myy-t7-P7h"/>
+                        <outlet property="btnVirgula" destination="79r-Ts-FoX" id="fyw-ej-xLR"/>
+                        <outlet property="btnZero" destination="hkD-VP-has" id="MDF-XT-spS"/>
+                        <outlet property="lblHistorico" destination="miE-0G-SPc" id="oIK-X3-Tbf"/>
+                        <outlet property="lblMostraResultado" destination="fAT-Ah-Lhg" id="jKO-w5-Lag"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
