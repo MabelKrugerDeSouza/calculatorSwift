@@ -9,9 +9,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var lblHistorico: UILabel!
+    
+    // Label
     @IBOutlet weak var lblMostraResultado: UILabel!
     
+    
+    //Botões Funcionabilidade
     @IBOutlet weak var btnAC: UIButton!
     @IBOutlet weak var btnMaisEMenos: UIButton!
     @IBOutlet weak var btnPorcen: UIButton!
@@ -22,6 +25,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var btnIgual: UIButton!
     @IBOutlet weak var btnVirgula: UIButton!
     
+    //Botões numeros
     @IBOutlet weak var btnZero: UIButton!
     @IBOutlet weak var btnUm: UIButton!
     @IBOutlet weak var btnDois: UIButton!
@@ -33,6 +37,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var btnOito: UIButton!
     @IBOutlet weak var btnNove: UIButton!
     
+    var numero1 = ""
+    var numero2 = ""
     var operacao: String = ""
     var calculou: Bool = false
    
@@ -41,23 +47,27 @@ class ViewController: UIViewController {
         limparTela()
     }
     
+    //MARK - FUNCÕES
     func limparTela(){
+        
+        numero1 = ""
+        numero2 = ""
         operacao = ""
-        lblHistorico.text = " "
         lblMostraResultado.text = " "
     }
     
     func atualizaHistorico( _texto : String){
-        if calculou == true{
-            operacao = lblMostraResultado.text!
-            calculou = false
-            lblMostraResultado.text = " "
+       
+        if  operacao == ""{
+            numero1 = numero1  + _texto
+            lblMostraResultado.text = numero1
+        }else{
+            numero2 = numero2 + _texto
+            lblMostraResultado.text = numero2
         }
-        operacao = operacao + _texto
-        lblHistorico.text = operacao
+        
     }
     
-    //Aqui ele vai pegar o resultado que retorno e vai colocar a quantidada depois da virgula
     func formatoDoResultado (_result: Double) -> String{
         if _result.truncatingRemainder(dividingBy: 1) == 0{
             return String(format: "%.0f", _result)// se o resultado depois da virgula for zero, nao precisa nada
@@ -66,119 +76,65 @@ class ViewController: UIViewController {
         }
     }
     
-    func validEmput() -> Bool{
-        var contagem = 0
-        var funcCharIndex = [Int]()
-        
-        for char in operacao{
-            if caracteresEspeciais(char: char){
-                funcCharIndex.append(contagem)
-            }
-            contagem += 1
-        }
-        
-        for index in funcCharIndex {
-            if index == 0 {
-                return false
-            }
-            if index == operacao.count - 1{
-                return false
-            }
-        }
-        return true
-    }
     
-    func caracteresEspeciais (char: Character) -> Bool{
-        if char == "*"{
-            return true
-        }
-        if char == "/"{
-            return true
-        }
-        if char == "+" {
-            return true
-        }
-        if char == "%"{
-            return true
-        }
-        if char == "-"{
-            return true
-        }
-        return false
-    }
-    
-    //Restos dos botoes
+    //MARK - botoes operacoes
     @IBAction func btnAcClique(_ sender: UIButton) {
         limparTela()
     }
     @IBAction func btnMaisEMenosClic(_ sender: UIButton) {
-        atualizaHistorico(_texto: "+/-")
+        if  operacao == ""{
+            numero1 = String(format: "%.0f", Double(numero1)! * (-1))
+            lblMostraResultado.text = numero1
+        }else{
+            numero2 = String(format: "%.0f", Double(numero2)! * (-1))
+            lblMostraResultado.text = numero2
+        }
     }
     @IBAction func btnPorcenClic(_ sender: UIButton) {
-        atualizaHistorico(_texto: "%")
+        if operacao == ""{
+            operacao = "%"
+        }
     }
     @IBAction func btnDivisaoClic(_ sender: UIButton) {
-        atualizaHistorico(_texto: "/")
+        if operacao == ""{
+            operacao = "/"
+        }
     }
     @IBAction func btnMultiClic(_ sender: UIButton) {
-        atualizaHistorico(_texto: "*")
+        if operacao == ""{
+            operacao = "*"
+        }
     }
     @IBAction func btnSubClic(_ sender: UIButton) {
-        atualizaHistorico(_texto: "-")
+        if operacao == ""{
+            operacao = "-"
+        }
     }
     @IBAction func btnSomaClic(_ sender: UIButton) {
-        atualizaHistorico(_texto: "+")
+        if operacao == ""{
+            operacao = "+"
+        }
     }
+    @IBAction func btnVirgula(_ sender: UIButton) {
+    }
+    
     @IBAction func btnIgualClic(_ sender: UIButton) {
-        if validEmput(){
-            let verSeAPorcentagemEstaFuncionando = operacao.replacingOccurrences(of: "%", with: "*0.01")
+            let calculo = numero1 + operacao + numero2
+            let verSeAPorcentagemEstaFuncionando = calculo.replacingOccurrences(of: "%", with: "*0.01")
             let expressao = NSExpression(format: verSeAPorcentagemEstaFuncionando)
             let resultado = expressao.expressionValue(with: nil, context: nil) as! Double
             let formatoDoResultado = formatoDoResultado(_result: resultado)
             
             lblMostraResultado.text  = formatoDoResultado
-        }else{
-            let alertaInput = UIAlertController(title: "Erro", message: "Calculadora não pode fazer operacao ", preferredStyle: .alert)
-            alertaInput.addAction(UIAlertAction(title: "OK", style: .default))
-            self.present(alertaInput, animated: true, completion: nil)
-        }
         
-        calculou = true
+            numero1 = formatoDoResultado
+            numero2 = ""
+            operacao = ""
     }
     
-    
-    
-    //Botoes dos numeros
-    @IBAction func btnZeroClic(_ sender: UIButton) {
-        atualizaHistorico(_texto: "0")
-    }
-    
-    @IBAction func btnUmClic(_ sender: UIButton) {
-        atualizaHistorico(_texto: "1")
-    }
-    @IBAction func btnDoisClic(_ sender: UIButton) {
-        atualizaHistorico(_texto: "2")
-    }
-    @IBAction func btnTresClic(_ sender: UIButton) {
-        atualizaHistorico(_texto: "3")
-    }
-    @IBAction func btnQuatroClic(_ sender: UIButton) {
-        atualizaHistorico(_texto: "4")
-    }
-    @IBAction func btnCincoClic(_ sender: UIButton) {
-        atualizaHistorico(_texto: "5")
-    }
-    @IBAction func btnSeisClic(_ sender: UIButton) {
-        atualizaHistorico(_texto: "6")
-    }
-    @IBAction func btnSeteClic(_ sender: UIButton) {
-        atualizaHistorico(_texto: "7")
-    }
-    @IBAction func btnOitoClic(_ sender: UIButton) {
-        atualizaHistorico(_texto: "8")
-    }
-    @IBAction func btnNoveClic(_ sender: UIButton) {
-        atualizaHistorico(_texto: "9")
+    //MARK - botoes dos numeros
+    @IBAction func btnBotoes(_ sender: UIButton) {
+        atualizaHistorico(_texto: String(sender.tag))
     }
 }
 
