@@ -8,11 +8,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-
     
     // Label
     @IBOutlet weak var lblMostraResultado: UILabel!
-    
     
     //Botões Funcionabilidade
     @IBOutlet weak var btnAC: UIButton!
@@ -42,14 +40,13 @@ class ViewController: UIViewController {
     var operacao: String = ""
     var calculou: Bool = false
    
+    //MARK - FUNCÕES
     override func viewDidLoad() {
         super.viewDidLoad()
         limparTela()
     }
     
-    //MARK - FUNCÕES
     func limparTela(){
-        
         numero1 = ""
         numero2 = ""
         operacao = ""
@@ -57,7 +54,6 @@ class ViewController: UIViewController {
     }
     
     func atualizaHistorico( _texto : String){
-       
         if  operacao == ""{
             numero1 = numero1  + _texto
             lblMostraResultado.text = numero1
@@ -65,7 +61,6 @@ class ViewController: UIViewController {
             numero2 = numero2 + _texto
             lblMostraResultado.text = numero2
         }
-        
     }
     
     func formatoDoResultado (_result: Double) -> String{
@@ -75,7 +70,6 @@ class ViewController: UIViewController {
             return String(format: "%.2f", _result) // aqui se nao tiver o zero ele pega os dois primeiros numeros depois da virgula.
         }
     }
-    
     
     //MARK - botoes operacoes
     @IBAction func btnAcClique(_ sender: UIButton) {
@@ -126,7 +120,6 @@ class ViewController: UIViewController {
             let formatoDoResultado = formatoDoResultado(_result: resultado)
             
             lblMostraResultado.text  = formatoDoResultado
-        
             numero1 = formatoDoResultado
             numero2 = ""
             operacao = ""
